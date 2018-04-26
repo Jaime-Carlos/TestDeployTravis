@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane id="AnchorPane" fx:id="S" prefHeight="547.0" prefWidth="787.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.FXMLDocumentController">
+
+    <children>
+      <Button fx:id="insertar" layoutX="78.0" layoutY="86.0" mnemonicParsing="false" onAction="#insertarDinero" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #7c43bd;" text="Insertar Dinero" textFill="WHITE" />
+      <ChoiceBox fx:id="box" layoutX="78.0" layoutY="131.0" prefHeight="26.0" prefWidth="182.0" scaleShape="false" style="-fx-background-color: #7c43bd;" styleClass="-fx-border" />
+      <Label fx:id="dineroingresado" alignment="CENTER" layoutX="78.0" layoutY="237.0" prefHeight="35.0" prefWidth="182.0" style="-fx-border-color: white; -fx-background-color: #7c43bd;" text="0" textAlignment="RIGHT" textFill="WHITE" />
+      <Label layoutX="78.0" layoutY="203.0" prefHeight="18.0" prefWidth="122.0" text="Dinero Ingresado:" textFill="WHITE" />
+      <Button fx:id="comprar" layoutX="78.0" layoutY="418.0" mnemonicParsing="false" onAction="#selecionarProducto" prefHeight="73.0" prefWidth="182.0" style="-fx-background-color: #7c43bd;" text="Comprar" textFill="WHITE" />
+      <Label fx:id="status" alignment="CENTER" layoutX="109.0" layoutY="14.0" prefHeight="18.0" prefWidth="532.0" style="-fx-font-size: 2em; -fx-text-fill: #EDE7F6;" text="Bienvenido a la Maquina Dispensadora" textFill="WHITE" />
+      <ListView fx:id="list" layoutX="360.0" layoutY="72.0" prefHeight="420.0" prefWidth="363.0" style="-fx-background-color: #7E57C2; -fx-border-color: #EDE7F6;" />
+      <JFXButton fx:id="adminbutton" buttonType="RAISED" layoutX="498.0" layoutY="500.0" onAction="#adminMode" ripplerFill="#ff00a6" style="-fx-background-color: #8a2be2; -fx-background-radius: 100;" text="Modo Admin" textFill="WHITE" />
+      <Label layoutX="78.0" layoutY="339.0" text="Su cambio es de: " textFill="WHITE" />
+      <Label fx:id="cambio" layoutX="215.0" layoutY="339.0" text="-" textFill="WHITE" />
+      <JFXButton fx:id="cancelar" buttonType="RAISED" layoutX="139.0" layoutY="372.0" onAction="#cancelarT" style="-fx-background-color: #7c43bd;" text="Cancelar" textFill="WHITE" />
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="682.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/vending_machine.png" />
+         </image>
+      </ImageView>
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PaginaCajaController">
+   <children>
+      <ListView fx:id="list" layoutX="22.0" layoutY="17.0" prefHeight="366.0" prefWidth="242.0" style="-fx-background-color: #7E57C2; -fx-border-color: #EDE7F6;" />
+      <Button fx:id="boton1" layoutX="305.0" layoutY="132.0" mnemonicParsing="false" onAction="#agregar" prefHeight="48.0" prefWidth="177.0" style="-fx-background-color: #7c43bd;" text="Agregar" textFill="#f8f5f5" />
+      <Button fx:id="boton2" layoutX="305.0" layoutY="189.0" mnemonicParsing="false" onAction="#borrar" prefHeight="48.0" prefWidth="178.0" style="-fx-background-color: #7c43bd;" text="Borrar" textFill="#f5eeee" />
+      <Button fx:id="boton3" layoutX="305.0" layoutY="249.0" mnemonicParsing="false" onAction="#editar" prefHeight="48.0" prefWidth="178.0" style="-fx-background-color: #7c43bd;" text="Editar" textFill="#f5f2f2" />
+      <Label layoutX="305.0" layoutY="32.0" text="Cajas de la Máquina" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="506.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/dinero.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

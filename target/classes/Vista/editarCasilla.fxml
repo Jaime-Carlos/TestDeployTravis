@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="266.0" style="-fx-background-color: #4a148c;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.161" fx:controller="Controladores.EditarCasillaController">
+   <children>
+      <Label layoutX="39.0" layoutY="35.0" text="Editar Casilla" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinner" layoutX="57.0" layoutY="229.0" prefHeight="26.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="producto" layoutX="56.0" layoutY="134.0" prefWidth="150.0" />
+      <Label layoutX="59.0" layoutY="109.0" text="Producto:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="197.0" text="Cantidad a ingresar:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="176.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/Edit.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="editarProducto" layoutX="46.0" layoutY="306.0" mnemonicParsing="false" onAction="#editar" prefHeight="38.0" prefWidth="171.0" style="-fx-background-color: #7c43bd;" text="Editar" textFill="WHITE" />
+   </children>
+</AnchorPane>

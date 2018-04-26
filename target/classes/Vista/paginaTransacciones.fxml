@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="767.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PaginaTransaccionesController">
+   <children>
+      <ListView fx:id="list" layoutX="27.0" layoutY="101.0" prefHeight="360.0" prefWidth="710.0" style="-fx-background-color: #7E57C2; -fx-border-color: #EDE7F6;" />
+      <Label layoutX="295.0" layoutY="45.0" text="Lista de transacciones" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="108.0" layoutX="629.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/transacciones.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

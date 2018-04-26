@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="600.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AdminCasillaController">
+   <children>
+      <Label layoutX="31.0" layoutY="37.0" style="-fx-font-weight: bold;" text="Casilla (CRUD)" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="agregarCasilla" buttonType="RAISED" layoutX="31.0" layoutY="105.0" onAction="#agregar" prefHeight="45.0" prefWidth="203.0" ripplerFill="#f200da" style="-fx-background-color: #7c43bd;" text="Agregar Casilla" textFill="WHITE" />
+      <JFXButton fx:id="editarCasilla" buttonType="RAISED" layoutX="31.0" layoutY="165.0" onAction="#editar" prefHeight="45.0" prefWidth="203.0" ripplerFill="#f200da" style="-fx-background-color: #7c43bd;" text="Editar Casilla" textFill="WHITE" />
+      <JFXButton fx:id="borrarCasilla" buttonType="RAISED" layoutX="31.0" layoutY="228.0" onAction="#borrar" prefHeight="45.0" prefWidth="203.0" ripplerFill="#f200da" style="-fx-background-color: #7c43bd;" text="Eliminar Casilla" textFill="WHITE" />
+      <ListView fx:id="list" layoutX="279.0" layoutY="14.0" prefHeight="306.0" prefWidth="306.0" style="-fx-background-color: #7E57C2; -fx-border-color: #EDE7F6;" />
+      <Label layoutX="373.0" layoutY="333.0" text="Lista de Casillas" textFill="WHITE" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="184.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/casilla.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

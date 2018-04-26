@@ -1,0 +1,62 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: #EDE7F6;
+}
+
+.list-cell:odd {
+    -fx-cell-hover-color: #0093ff;
+    -fx-background-color: #7c43bd;
+    -fx-text-fill: white;
+}
+.list-cell:even{
+    -fx-background-color: #4a148c;
+    -fx-text-fill: white;
+}
+.list-cell:filled:hover {
+    -fx-cell-hover-color: #0093ff;
+    -fx-text-fill: white;
+}
+.choice-box .context-menu { 
+    -fx-background-color:  #7c43bd; 
+    -fx-text-fill: white;
+}
+.choice-box .menu-item > .label{ 
+    -fx-text-fill: white; 
+}
+.choice-box .menu-item { 
+    -fx-border-color: white ; 
+}
+.choice-box > .label { 
+    -fx-text-fill: white; 
+}
+.thumb {
+    -fx-background-color:  #7E57C2;
+}
+.track{
+    -fx-background-color: #D1C4E9;
+}
+.increment-arrow{
+    -fx-background-color: white;
+}
+.decrement-arrow{
+    -fx-background-color: white;
+}
+.increment-button{
+    -fx-background-color: #7E57C2;
+}
+.decrement-button{
+    -fx-background-color: #7E57C2;
+}
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+}
+.text-input {
+    -fx-text-fill: WHITE; 
+}

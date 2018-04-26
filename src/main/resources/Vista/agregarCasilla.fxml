@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="710.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgregarCasillaController">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="91.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/pasoimg1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="533.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/pasoimg2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="21.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elige el producto que deseas agregar!" />
+      <Text fill="WHITE" layoutX="481.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escribe la cantidad que deseas!" />
+      <ChoiceBox fx:id="producto" layoutX="46.0" layoutY="124.0" prefWidth="150.0" />
+      <Spinner fx:id="spinner" layoutX="489.0" layoutY="124.0" />
+      <JFXButton fx:id="agregar" onAction="#agregar" layoutX="298.0" layoutY="150.0" prefHeight="52.0" prefWidth="87.0" style="-fx-background-color: #7c43bd;" text="Agregar" textFill="WHITE" />
+   </children>
+</AnchorPane>

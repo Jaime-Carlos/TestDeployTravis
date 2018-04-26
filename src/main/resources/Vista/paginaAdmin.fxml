@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="605.0" style="-fx-background-color: #4a148c;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PaginaAdminController">
+   <children>
+      <JFXButton fx:id="transaccion" buttonType="RAISED" layoutX="170.0" layoutY="269.0" onAction="#crudTransaccion" prefHeight="61.0" prefWidth="259.0" ripplerFill="#ff0090" style="-fx-background-color: #7c43bd;" text="Transacción" textFill="WHITE" />
+      <JFXButton fx:id="producto" buttonType="RAISED" layoutX="170.0" layoutY="200.0" onAction="#crudProducto" prefHeight="61.0" prefWidth="259.0" ripplerFill="#ff0090" style="-fx-background-color: #7c43bd;" text="Producto" textFill="WHITE" />
+      <JFXButton fx:id="casilla" buttonType="RAISED" layoutX="170.0" layoutY="132.0" onAction="#crudCasilla" prefHeight="61.0" prefWidth="259.0" ripplerFill="#ff0090" style="-fx-background-color: #7c43bd;" text="Casilla" textFill="WHITE" />
+      <JFXButton fx:id="caja" buttonType="RAISED" layoutX="170.0" layoutY="64.0" onAction="#crudCaja" prefHeight="61.0" prefWidth="259.0" ripplerFill="#ff0090" style="-fx-background-color: #7c43bd;" text="Caja" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="23.0" style="-fx-font-weight: bold;" text="Modo Administrador" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="95.0" fitWidth="93.0" layoutX="37.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/admin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

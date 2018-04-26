@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4a148c;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AdminProductoController">
+   <children>
+      <ListView fx:id="listaCrudProductos" layoutX="31.0" layoutY="32.0" prefHeight="317.0" prefWidth="229.0" style="-fx-background-color: #7E57C2; -fx-border-color: #EDE7F6;" />
+      <Label layoutX="300.0" layoutY="32.0" style="-fx-font-weight: bold;" text="Productos (CRUD)" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="agregarProducto" layoutX="300.0" layoutY="109.0" mnemonicParsing="false" onAction="#agregar" prefHeight="38.0" prefWidth="171.0" style="-fx-background-color: #7c43bd;" text="Agregar" textFill="WHITE" />
+      <Button fx:id="borrarProducto" layoutX="300.0" layoutY="161.0" mnemonicParsing="false" onAction="#borrar" prefHeight="38.0" prefWidth="171.0" style="-fx-background-color: #7c43bd;" text="Borrar" textFill="WHITE" />
+      <Button fx:id="editarProducto" layoutX="300.0" layoutY="215.0" mnemonicParsing="false" onAction="#editar" prefHeight="38.0" prefWidth="171.0" style="-fx-background-color: #7c43bd;" text="Editar" textFill="WHITE" />
+      <ImageView fitHeight="108.0" fitWidth="146.0" layoutX="427.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Utility/chips-stack.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
